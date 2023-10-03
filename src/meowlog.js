@@ -1,14 +1,15 @@
-import util from 'util';
+const util = require('util');
+
 /**
- * Better console.log() with extra feature:
+ * Better console.log() with extra features:
  * - colored
  * - expand all objects
  * @param  {...any} args 
  */
-export function meowlog(...args) {
+function meowlog(...args) {
   args.forEach(arg => {
     try {
-      let formatedLog = util.inspect(arg, {depth: null, colors: true});
+      let formatedLog = util.inspect(arg, { depth: null, colors: true });
       console.log(formatedLog);
     } catch (e) {
       console.log(arg);
@@ -16,4 +17,4 @@ export function meowlog(...args) {
   });
 }
 
-export default meowlog;
+module.exports = meowlog;

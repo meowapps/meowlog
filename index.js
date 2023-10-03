@@ -1,2 +1,2 @@
-export { default } from "./src/meowlog";
+module.exports = require("./src/meowlog");
 

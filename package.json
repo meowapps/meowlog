@@ -1,7 +1,7 @@
 {
   "name": "@meowapp/meowlog",
   "homepage": "https://meowship.vn/",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/meowapps/meowlog"
+  },
+  "devDependencies": {
+    "esbuild": "0.19.4"
   }
 }
